@@ -1,0 +1,44 @@
+<!-- HTML 링크 태그 =============================================================
+1. <a> ~ </a> (anchor) : 하이퍼링크 의미
+            - 속성 href : Hypertext Reference 약자
+                    <a href='이동할 URL주소'> </a>
+            - 속성 target : URL 페이지 열릴 위치
+                    _self : 기본값 : 현재 창
+                    _blank : 새 창, 새 탭
+                    _parent : 현재 페이지보다 위
+                    _top : root에서 해당 문서 열기
+2. <img> ~ </img> (image) : 웹페이지에 이미지 표시
+            - 속성 src : 이미지 경로
+                    <img src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4wppp?ver=89fd">
+            - 속성 alt (alternate)
+            - 속성 width, height = '숫자' : 크기 지정 (400,200,50% 등)
+================================================================================-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> 나의 WEB SERVER 시작 </title>
+    </head>
+    <body width="50%">
+        <h5>링크 태그</h5>
+        <a href="http://www.naver.com" target="_blank">네이버</a> ㅣ 
+        <a href="http://www.google.com" target="_parent">구글</a> ㅣ 
+        <a href="http://www.daum.net" target="_top">다음</a> ㅣ 
+        <a href="http://www.knu.ac.kr" target="_self">경북대</a><br>
+    <p>
+        <h5>이미지 태그</h5>
+        <a href="http://www.google.com" target="_blank">
+            <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png">
+        </a><br><br>
+        <a href="http://www.google.com" target="_blank">
+            <img src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFil" 
+            width="400" height="200" alt="구글로고">
+        </a><br><br>
+        <a href="http://www.google.com" target="_blank">
+            <img src="../image/LQ997B-0_1300x.jpg" 
+            width=50% height=50% alt="구글로고">
+        </a><br><br>
+    </p>
+    </body>
+</html>
+
+

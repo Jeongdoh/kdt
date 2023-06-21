@@ -1,0 +1,92 @@
+<!--html태그 - 입력관련===============================================================================
+-사용자로부터 입력을 받을 수 있는 태그
+- 입력데이터 ==> 서버 전송
+* <form>~</form> : 서버전송에 관련된 태그들 담는 태그 
+    -전송관련 속성
+        *action : 데이터 처리 url
+        *method : 입력데이터 서버 전달방식(GET,POST)
+-사용자로부터 입력을 받을 수 있는 태그
+*<input type='입력의 종류'
+name=''
+value='사용자에게 보여지는 값'
+on이벤트이름='JS CODE'
+======================================================================================================-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MYWEB</title>
+        <script>
+            function doing(){
+                //input 태그 객체에 현재 value 속성을 읽어와서 저장하기
+                let a_num = document.getElementById('inputA').value;
+                let b_num = document.getElementById('inputB').value;
+                //확인용 디버깅
+                console.log(a_num)
+                console.log(b_num)
+                //계산 결과를 html 페이지에 추가
+                document.getElementById('valueA').innerHTML=a_num;
+                document.getElementById('valueB').innerHTML=b_num;
+                document.getElementById('valueC').innerHTML=Number(a_num)+Number(b_num);
+            }            
+        </script>
+    </head>
+    <body>
+        <h4>계산</h4>
+        <label for="inputA">a</label>
+        <input id="inputA" value=1 onkeyup="doing()">
+
+
+        <label for="inputB">b</label>
+        <input id="inputB" value=2 onkeyup="doing()">
+
+        <input type="button" value="계산" onclick="calc()"><br/>
+
+        <p><span id="valueA">1</span>+<span id="valueB">2</span>=<span id="valueC">3</span>입니다.</p>
+
+
+
+
+        <h1>다양한 입력 태그 살펴보기</h1>
+        <h4>텍스트 입력</h4>
+        성별입력 :
+        <input type="text" name="gender" id="gen" value="남자"><br>
+
+        <h4>패스워드</h4>
+        비밀번호 입력 :
+        <input type="password" name="gender" id="gen" placeholder="영어, 숫자, 8자리"><br>
+
+        <h4>라디오 버튼입력 - 1개 선택</h4>
+        혈액형 선택 : <br>
+        <input type="radio" name="blood" value="A" checked>A형
+        <input type="radio" name="blood" value="B">B형
+        <input type="radio" name="blood" value="O">O형
+        <input type="radio" name="blood" value="AB">AB형
+        
+        
+        <h4>체크박스 버튼입력 - 1개 선택</h4>
+        취미 선택 : <br>
+        <input type="checkbox" name="hobby" value="등산" checked>등산
+        <input type="checkbox" name="hobby" value="댄스">댄스
+        <input type="checkbox" name="hobby" value="잠자기" disabled>잠자기
+        <input type="checkbox" name="hobby" value="수영">수영
+        <input type="checkbox" name="hobby" value="꽃꽃이">꽃꽃이
+
+
+        <h4>텍스트 버튼 입력 - 긴 글자 문장입력</h4>
+        오늘의 메시지:<br>
+        <textarea rows="20" cols="50" name="message">happy</textarea>
+
+
+        <h4>버튼 입력</h4>
+        삭제결정 :
+        <!-- 속성 on이벤트명="event handler"-->
+        <input type="button" value="예" name="delBTN" onclick="console.log('클릭')">
+
+        <h4>다양한 컨텐츠 버튼 입력</h4>
+        <button value="아니오" name="noBTN" onclick="alert('아니오')">NO</button> <br>
+
+
+        <h4>버튼 입력</h4>
+        전송결정 : <input type="submit" name="send" value="서버로 전송"><br>
+    </body>
+</html>

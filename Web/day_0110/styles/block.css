@@ -1,0 +1,17 @@
+#a{
+    background-color: rgb(235, 207, 252);
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    width: 50%;
+    height: 300px;
+    border: 5px;
+    border-radius: 10%;
+}
+
+#b{
+    background-color: rgb(121, 246, 246);
+    font-weight: bold;
+}
+
+span{color: blueviolet; font-size: 20px;}
