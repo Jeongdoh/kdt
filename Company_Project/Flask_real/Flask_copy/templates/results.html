@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>    
+    <title>유사도 비교 결과</title>
+    <!-- Add Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css?ver=1.1">
+    <!-- Add jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Add Bootstrap JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+    </style>
+  </head>
+
+  <body>
+    
+    <div style= "background-color: #9d949e;">
+
+
+      <br></br>
+      <br></br>
+
+    <div class="container">
+      <div style = "font-family: '굴림체'";>
+        <div style="font-weight: bold; font-size: 40px; font-family: '굴림체', sans-serif; text-align: center;"> 유사도 비교 결과 : {{match_ratio*100}}%</div>
+
+       <!-- 뒤로가기 버튼 -->
+      <button onclick="goBack()" class="btn btn-primary mb-3" style="background-color: transparent; border: none; color: green font-weight: bold;">← back</button>
+      {% if results %}
+      <div style="text-align: center;">
+      <table class="table">
+        <thead style="background-color: #dfc781;">
+            <tr>
+              <th>비교대상의(file1) 인덱스</th>
+              <th>비교조문의(file2) 인덱스</th>
+              <th>비교대상에서의(file1) 조문</th>
+              <th>비교조문의(file2) 제목</th>
+              <th>두 문서의 유사도</th>
+              <th>인덱스 일치(정답)여부</th>
+            </tr>
+          </thead>
+          <tbody style="background-color:#c2b8c4;">
+            {% for result in results %}
+              <tr>
+                <td>{{ result.compared_index }}</td>
+                <td>{{ result.index }}</td>
+                <td>{{ result.compared_text }}</td>
+                <td>{{ result.title }}</td>
+                <td>{{ result.similarity }}</td>
+                <td>{{ result.match }}</td>
+              </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      {% else %}
+        <p>No results available.</p>
+      {% endif %}
+    </div>
+    <script>
+      function goBack() {
+        window.history.back(); // 뒤로 가는 기능
+      }
+    </script>
+  </div>
+  <div class='tableauPlaceholder' id='viz1686823707531' style='position: relative'><noscript><a href='#'><img alt='유사도 비율 그래프 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;1_&#47;1_16868237005590&#47;1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='1_16868237005590&#47;1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;1_&#47;1_16868237005590&#47;1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='ko-KR' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1686823707531');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+  </body>
+</html>

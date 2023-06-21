@@ -1,0 +1,207 @@
+body {
+    overflow: hidden;
+    font-family: 'Roboto Slab', serif;
+}
+
+h3 {
+    
+    font-family: 'Pretendard-Thin';
+    color: #ffffff;
+    text-align: center;
+    font-style: italic;
+    font-weight: lighter;
+    margin-top: 50px;
+    font-size: 20px;
+}
+
+/* 상단바 */
+
+.menu * {
+    display: inline;
+}
+
+.menu li {
+    margin: 35px;
+}
+
+.menu li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.menu ul {
+    padding-left: 0px;
+}
+
+.menu {
+    font-size: 20px;
+    font-style: italic;
+    align-items: center;
+    text-align: center;
+    padding-top: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+} 
+
+/* page 1 */
+
+.one {
+    background-size: cover;
+    text-align: center;
+    padding-top: 180px;
+    padding-bottom: 130px;
+}
+
+.profile {
+    border-radius: 30%;
+    display: inline-block;
+    /* 내부여백 */
+    padding: 0.5rem;
+    /* 위쪽여백 */
+    margin-top: 10px;
+    /* border: 0.5px solid gray; */
+    /* background-color: rgb(255, 255, 255,0.1); */
+    /* 실선설정 */
+    /* border: 1px solid rgba(255, 255, 255, 0.5); */
+}
+
+/* .profile img {
+    border-radius: 30%;
+} */
+
+/* page 2 */
+
+.intext {
+    float: right;
+    margin-top: 15px;
+    padding-left: 50px;
+}
+
+body {
+
+    background-color: #9d949e;
+}
+
+.list {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 10vh;
+}
+
+#intro {
+  position: absolute;
+  top: 50%;
+  height: 240px;
+  margin-top: -200px;
+}
+#intro h1 {
+  font-family: 'Palanquin Dark', sans-serif;
+  font-weight: 600;
+  font-size: 72px;
+  text-align: center;
+}
+
+/* 글씨체 */
+.h3 {
+  font-family: '돋음체';
+  font-weight: 400;
+  font-size: 0px;
+  color: #000000;
+  text-align: center;
+}
+
+.h2 {
+  font-family: '돋음체' ;
+  font-weight: 200;
+  font-size: 20px;
+}
+
+
+
+
+
+/* page 3 */
+
+h1 {
+    text-align: center;
+}
+
+.lists{
+    text-align: center;
+    font-family: 'Pretendard-Thin';
+    display: block;
+    text-align: center;
+    font-weight: 400;
+    font-family: 'Pretendard-Thin';
+    font-size: 18px;
+    line-height: 1.5;
+    font-style: italic;
+}
+
+.list_img {
+    /* width: 300px;
+    height: 300px; */
+    display: block;
+    margin: 7vh 5vh;
+    margin-bottom: 50px;
+}
+
+.favorites {
+    display:inline-flex;
+    margin-top: 60px;
+}
+
+/* page 4 */
+
+.four {
+    margin-top: 250px;
+    text-align: center;
+    align-items: center;
+}
+
+.five {
+        text-align: center;
+        align-items: center;
+}
+
+.contact_img {
+    width: 100%;
+    height: 500px;
+    padding-bottom: 60px;
+}
+
+.ct {
+    margin-top: 500px;
+    font-family: 'Roboto Slab', serif;
+    text-decoration: none;
+    color: white;
+    font-size: 50px;
+    font-style: italic;
+    margin: 35px;
+}
+
+.h5 {
+    padding-top: 150px;
+    font-family: "Apple SD Gothic Neo", sans-serif;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 1.5;
+    color: white;
+    text-align: center;
+  }
+
+  .imglist {
+    text-align: center;
+  }
+  .imglist img {
+    width: 100px;
+    margin-top: 140px;
+    padding: 50px;
+  }
+  .imglist a {
+    text-decoration: none;
+  }

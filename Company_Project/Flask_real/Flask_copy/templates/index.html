@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🍒 THE THREE-DO 🍒</title>
+    <link rel = "stylesheet" href = "/static/css/main.css?ver=1.1">
+    <link rel = "stylesheet" href = "/static/css/scroll.css?ver=1.1">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+    </style>
+</head>
+<body>
+
+<div id="container">
+    <header id = "header"> 
+        <nav class ="menu">
+            <ul>
+              <img src="/static/imgs/ico_updownlogo.png" alt="위니텍로고" width="60px" height="30px ">
+                <li><a href = {{url_for('index')}} ><b>Home</b></a></li>
+                <li><a href = {{url_for('code')}} ><b>Text Similarity</b></a></li>
+                <li><a href = {{url_for('introduce')}}  ><b>introduce</b></a></li>
+                <li><a href = {{url_for('contact')}}  ><b>Contact</b></a></li>  
+            </ul>
+        </nav>
+    </header> 
+  <div class="list">
+      <div class="one">
+        <br><br><br><br><br><br><br><br><br>
+        <h1>
+            <strong style="font-size: 40px; color: white;">
+                <span style="color: rgb(221, 0, 0);">F</span>ile <span style="color: rgb(221, 0, 0);">T</span>ext <span style="color: rgb(221, 0, 0);">S</span>imilarity
+            </strong>
+          </h1>
+        <hr style="border: 0; border
+        top: 1px solid white;">
+        <h2><strong style="font-size: 20px; font-family: '돋음체', sans-serif; color: white;"> 파일간 텍스트 유사도를 분석해드립니다.</strong></h2>
+        <br><br><br><br><br><br><br><br><br>
+        <!-- 텍스트 반짝이는 효과 -->
+        <style>
+            @keyframes sparkle {
+              0% { color: rgb(255, 255, 255); }
+              50% { color: rgb(202, 0, 0); }
+              100% { color: rgb(181, 181, 181) }
+            }
+            .sparkling-text {
+              animation: sparkle 2s linear infinite;
+            }
+            </style>
+            <strong style="font-size: 20px; font-family: sans-serif; color: black;" class="sparkling-text"> scroll <br><b></b> ▼ <br>▼</br>▼</br> </strong>
+        <!-- 이미지 삽입 
+            <span class="profile"><img src="/static/imgs/111.jpg" width="1000px;" height="380px" alt=""/></span>  -->
+      </div>
+  </div>
+
+
+
+<!-- 2페이지 : 코드  -->
+
+
+<div class="list" > 
+  
+  <div class ="two">
+
+    <div style="font-weight: bold; font-size: 40px; font-family: '굴림체', sans-serif; text-align: center;"> CSV 파일 비교</div>
+    <div style="font-size: 25px; font-family: '굴림체', sans-serif; text-align: center;" > 파일을 비교하고 유사 정확도 확인하기</div><br>
+    <div style="font-size: 15px; font-family: '굴림체', sans-serif; font-weight: bold; color: green; text-align: center;">√ 무료 √ 온라인 √ 제한없음 </div>
+      <br><br>
+
+      <br><br>
+          <div class="row justify-content-center">
+            <div class="col-md-6">
+              <div style="border: 3px dashed blue; padding: 65px; " >
+              <form action="/code" method="POST" enctype="multipart/form-data">
+                <div class="form-group">
+                  <label for="fire1" style="font-size: 20px; font-weight: 50;"> Fire1 CSV:</label> <br>
+                  <input type="file" name="fire1" id="fire1" accept=".csv" class="form-control" required style="background-color: lightyellow; height: 30px; width: 100%; font-size: 15px; ">
+                </div> <br>
+                <div class="form-group">
+                  <label for="fire2" style="font-size: 20px; font-weight: 200;">Fire2 CSV:</label><br>
+                  <input type="file" name="fire2" id="fire2" accept=".csv" class="form-control" required style="background-color: lightyellow; height: 30px; width: 100%; font-size: 15px;">
+                </div><br> 
+                <div class="form-group" >
+                  <label for="similarityMethod">Select Similarity Method:</label><br>
+                  <select name="similarityMethod" id="similarityMethod" class="form-control" style="background-color: lightyellow; height: 35px; font-size: 15px; width: 100%;"> 
+                    <option value="cosine">Cosine Similarity</option>
+                    <option value="jaccard">Jaccard Similarity</option>
+                    <option value="manhattan">Manhattan Distance</option>
+                    <option value="euclidean">Euclidean Distance</option>
+                  </select>
+                </div><br>
+                <input type="submit" value="비교" class="btn btn-primary" style="background-color: orange; border: none; height: 35px; width: 20%; color: white; ; ">
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- 3 페이지 : 소개 -->
+    <!-- 도형 삽입 -->
+ <div class="list">
+    <div class="three">
+        <br><br><br><br>
+        <div style="background-color: #800020; padding: 110px; width: 323px; "><br>
+            <h1 style="color: white; font-family: 'Your Preferred Font', sans-serif; font-size: 36px; font-weight: bold;">Curious about THE THREE-DO? 💕</h1>
+             </div>
+        <div style="text-align: center;">
+            <img src="/static/imgs/bg-showcase-2.jpg" alt="코드" width="543px" height="250">
+              </div>
+          </div>
+    <!-- 이미지 삽입과 역활 설명 -->
+        <div class = "favorites">
+            <div class="lists">
+                <img class="list_img" src="/static/imgs/dohyeong3.png" alt="" width="230px" height="320px">
+                <div style="padding: 2.5px; font-family: 굴림체; width: 270px; display: inline-block; text-align: center;">
+                    <p class="list_text" style="font-weight: bold; font-style: normal; font-size: 22px; color: white;">
+                        <strong>김도형</strong>  <hr style="border-top: 3px double rgb(255, 255, 255);">
+                        <span style="font-weight: bold; font-size: 15px; color: white; font-style: normal;">
+                            데이터 수집 및 전처리<br>
+                            프로젝트 문서 작성
+                          </span>
+                    </p>
+                </div>
+                  </div>
+                <br><br>
+                <div class="lists">
+                    <br>
+                <img class="list_img" src="/static/imgs/me2.png" alt="" width="220px" height="270px">
+                <br>
+                <div style="padding: 2.5px; font-family: 굴림체; width: 270px; display: inline-block; text-align: center;">
+                    <p class="list_text" style="font-weight: bold; font-style: normal; font-size: 22px; color: white;">
+                        <strong>임도영</strong> <hr style="border-top: 3px double rgb(255, 255, 255);">
+                        <span style="font-weight: bold; font-size: 15px; color: white; font-style: normal;">
+                            데이터 수집 및 크롤링 <br>
+                            코드통합 및 WEB 제작 , PPT 제작 
+                        </span>
+                      </p>
+                </div>
+                </div>
+                <br><br>
+                <div class="lists">
+                    <br>
+                <img class="list_img" src="/static/imgs/jungdo.png" alt="" width="220px" height="270px">
+                <br>
+                <div style="padding: 2.5px; font-family: 굴림체; width: 270px; display: inline-block; text-align: center;">
+                    <p class="list_text" style="font-weight: bold; font-style: normal; font-size: 22px; color: white;">
+                        <strong>정  도</strong> <hr style="border-top: 3px double rgb(255, 255, 255);">
+                        <span style="font-weight: bold; font-size: 15px; color: white; font-style: normal;">
+                            데이터 수집 및 크롤링 <br>
+                            텍스트 유사도 코드 및 기능 구현  
+                        </span>
+                      </p>
+                </div>
+                </div>
+<br><br><br>
+            </div>
+          </div>
+
+
+      
+
+<!-- 4 페이지(마지막 페이지)-->
+    <div class="list">
+        <div class = "four">
+          
+            <div class="h5">
+            <h5> Any Questions? </h5>
+            <div class="imglist">
+                <a href="http://www.winitech.com">
+                  <img src="/static/imgs/ico_updownlogo.png" alt="">
+                </a>
+                <a href="https://app.slack.com/client/T053XEBBQL8/C0534RGCYPP">
+                  <img src="/static/imgs/slack2.png" alt="">
+                </a>
+                <a href="https://www.notion.so/Winitech-13dbee81e9394e518a66f658e36dd6c5">
+                  <img src="/static/imgs/notion2.png" alt="" >
+                </a>
+<br>
+</div>
+<div style="font-size: 12px; color:black; "> <개발자 이메일> <br> </div>
+
+<div style="display: flex; justify-content: center; gap: 40px;">
+    <div style="font-size: 12px; ">
+      김도형
+      <a href="mailto:thekimdh@gmail.com">
+        <div class="container">
+          <img src="/static/imgs/gmail.png" alt="" width="25px" height="25px">
+        </div>
+      </a>
+    </div>
+    
+    <div style="font-size: 12px;">
+      임도영
+      <a href="mailto:imdymi@naver.com">
+        <div class="container">
+          <img src="/static/imgs/gmail.png" alt="" width="25px" height="25px">
+        </div>
+      </a>
+    </div>
+  
+    <div style="font-size: 12px;">
+      정 도
+      <a href="mailto:y2kjd@naver.com">
+        <div class="container">
+          <img src="/static/imgs/gmail.png" alt="" width="25px" height="25px">
+        </div>
+      </a>
+    </div>
+  </div>
+<br><br>
+
+<div>
+</body>
+</html>

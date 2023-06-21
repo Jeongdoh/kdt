@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>We are the THREE-DO!</title>
+    <link rel = "stylesheet" href = "/static/css/main.css?ver=1.1">
+    <link rel = "stylesheet" href = "/static/css/introduce.css?ver=1.1">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+    </style>
+</head>
+<body>
+    <header id = "header"> 
+        <nav class ="menu">
+            <ul>
+                <img src="/static/imgs/ico_updownlogo.png" alt="위니텍로고" width="60px" height="30px ">
+                <li><a href = {{url_for('index')}} ><b>Home</b></a></li>
+                <li><a href = {{url_for('code')}} ><b>Text Similarity</b></a></li>
+                <li><a href = {{url_for('introduce')}}  ><b>introduce</b></a></li>
+                <li><a href = {{url_for('contact')}}  ><b>Contact</b></a></li>
+            </ul>
+        </nav>
+    </header> 
+    <!-- 도형 삽입 -->
+    <div class="list">
+        <div class="three">
+            <br><br><br><br>
+            <div style="background-color: #800020; padding: 110px; width: 323px; "><br>
+                <h1 style="color: white; font-family: 'Your Preferred Font', sans-serif; font-size: 36px; font-weight: bold;">Curious about THE THREE-DO? 💕</h1>
+            </div>
+            <div style="text-align: center;">
+                <img src="/static/imgs/bg-showcase-2.jpg" alt="코드" width="543px" height="250";>
+            </div></div>
+    <!-- 이미지 삽입과 역활 설명 -->
+    <div class = "favorites">
+        <div class="lists">
+            <img class="list_img" src="/static/imgs/dohyeong3.png" alt="" width="230px" height="325px">
+            <br>
+            <div style="padding: 2.5px; font-family: 굴림체; width: 270px; display: inline-block; text-align: center;">
+                <p class="list_text" style="font-weight: bold; font-style: normal; font-size: 22px; color: white;">
+                    <strong>김도형</strong>  <hr style="border-top: 3px double rgb(255, 255, 255);">
+                    <span style="font-weight: bold; font-size: 15px; color: white; font-style: normal;">
+                        데이터 수집 및 전처리<br>
+                        프로젝트 문서 작성
+                      </span>
+                </p>
+            </div>
+              </div>
+            <br><br>
+            <div class="lists">
+                <br>
+            <img class="list_img" src="/static/imgs/me2.png" alt="" width="220px" height="270px">
+            <br><br>
+
+            <div style="padding: 2.5px; font-family: 굴림체; width: 270px; display: inline-block; text-align: center;">
+                <p class="list_text" style="font-weight: bold; font-style: normal; font-size: 22px; color: white;">
+                    <strong>임도영</strong> <hr style="border-top: 3px double rgb(255, 255, 255);">
+                    <span style="font-weight: bold; font-size: 15px; color: white; font-style: normal;">
+                        데이터 수집 및 크롤링 <br>
+                        코드통합 및 WEB 제작 , PPT 제작 
+                    </span>
+                </p>
+            </div>
+            </div>
+            <br><br>
+            <div class="lists">
+                <br>
+            <img class="list_img" src="/static/imgs/jungdo.png" alt="" width="220px" height="270px">
+            <br><br>
+            <div style="padding: 2.5px; font-family: 굴림체; width: 270px; display: inline-block; text-align: center;">
+                <p class="list_text" style="font-weight: bold; font-style: normal; font-size: 22px; color: white;">
+                    <strong>정  도</strong> <hr style="border-top: 3px double rgb(255, 255, 255);">
+                    <span style="font-weight: bold; font-size: 15px; color: white; font-style: normal;">
+                        데이터 수집 및 크롤링 <br>
+                        텍스트 유사도 코드 및 기능 구현  
+                    </span>
+                  </p>
+            </div>
+            </div>
+  <br><br><br>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

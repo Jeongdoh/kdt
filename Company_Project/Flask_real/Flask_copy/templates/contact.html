@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel = "stylesheet" href = "/static/css/main.css?ver=1.1">
+    <link rel = "stylesheet" href = "/static/css/count.css?ver=1.1">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+    </style>
+</head>
+<body>
+    <header id = "header"> 
+        <nav class ="menu">
+            <ul>
+              <img src="/static/imgs/ico_updownlogo.png" alt="위니텍로고" width="60px" height="30px ">
+                <li><a href = {{url_for('index')}} ><b>Home</b></a></li>
+                <li><a href = {{url_for('code')}} ><b>Text Similarity</b></a></li>
+                <li><a href = {{url_for('introduce')}}  ><b>introduce</b></a></li>
+                <li><a href = {{url_for('contact')}}  ><b>Contact</b></a></li>
+            </ul>
+        </nav>
+    </header> 
+    <div class="list" style="margin-top: 0;">
+        <div class = "five">
+            <div class="h5">
+              <br>
+            <h5> Any Questions? </h5>
+            <div class="imglist">
+                <a href="http://www.winitech.com">
+                  <img src="/static/imgs/ico_updownlogo.png" alt="">
+                </a>
+                <a href="https://app.slack.com/client/T053XEBBQL8/C0534RGCYPP">
+                  <img src="/static/imgs/slack2.png" alt="">
+                </a>
+                <a href="https://www.notion.so/Winitech-13dbee81e9394e518a66f658e36dd6c5">
+                  <img src="/static/imgs/notion2.png" alt="" >
+                </a>
+</div>
+<div style="font-size: 12px; color:black; "><개발자 이메일></div>
+<div style="display: flex; justify-content: center; gap: 40px;">
+    <div style="font-size: 12px; ">
+      김도형
+      <a href="mailto:thekimdh@gmail.com">
+        <div class="container">
+          <img src="/static/imgs/gmail.png" alt="" width="25px" height="25px">
+        </div>
+      </a>
+    </div>
+    
+    <div style="font-size: 12px;">
+      임도영
+      <a href="mailto:imdymi@naver.com">
+        <div class="container">
+          <img src="/static/imgs/gmail.png" alt="" width="25px" height="25px">
+        </div>
+      </a>
+    </div>
+  
+    <div style="font-size: 12px;">
+      정 도
+      <a href="mailto:y2kjd@naver.com">
+        <div class="container">
+          <img src="/static/imgs/gmail.png" alt="" width="25px" height="25px">
+        </div>
+      </a>
+    </div>
+  </div>
+
+
+
+            <!-- <a href="http://www.winitech.com" class="ct"> WINITECH</a>
+            <a href="https://app.slack.com/client/T053XEBBQL8/C0534RGCYPP" class="ct">SLACK</a>
+            <a href="https://www.notion.so/Winitech-13dbee81e9394e518a66f658e36dd6c5" class="ct">NOTION</a> -->
+</body>
+
+</html>
+

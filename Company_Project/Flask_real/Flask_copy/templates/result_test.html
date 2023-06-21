@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<head>
+    <title>TEST</title>
+</head>
+<body>
+    {% if results %}
+        <table class="table">
+          <thead>
+            <tr>
+              <th>비교조문의 인덱스</th>
+              <th>비교대상에서의 조문</th>
+              <th>비교조문의 제목</th>
+              <th>비교대상의 인덱스</th>
+              <th>두 문서의 유사도</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for result in results %}
+              <tr>
+                <td>{{ result.index }}</td>
+                <td>{{ result.compared_text }}</td>
+                <td>{{ result.title }}</td>
+                <td>{{ result.compared_index }}</td>
+                <td>{{ result.similarity }}</td>
+              </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      {% else %}
+        <p>No results available.</p>
+      {% endif %}
+    <br>
+</body>

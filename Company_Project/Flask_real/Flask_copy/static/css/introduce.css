@@ -1,0 +1,12 @@
+body {
+    background:  #212121;
+    background: -webkit-linear-gradient(to right, #280b0b, #212121);
+    background: linear-gradient(to right,  #520c0c, #212121);
+}
+
+.list {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 100px;
+}
