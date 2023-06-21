@@ -1,0 +1,130 @@
+#header{
+    height: 80px;
+    font-size: 20;
+    text-align: center;
+}
+
+#fullscreen{
+    width: 100%;
+    height: 1300px;
+}
+
+#my_input{
+    width: 20%;
+    height: 1300px;
+    float: left;
+    background-image : url('../img/gra_img.jpg');
+}
+
+#brand{
+    width: 100%;
+    height: 12%;
+    float: left;
+    text-align: center;
+}
+
+#gender{
+    width: 100%;
+    height: 8%;
+    float: left;
+    text-align: center;
+
+}
+
+#tpo{
+    width: 100%;
+    height: 8%;
+    float: left;
+    text-align: center;
+
+}
+
+#season{
+    width: 100%;
+    height: 8%;
+    float: left;
+    text-align: center;
+
+}        
+
+#level{
+    width: 100%;
+    height: 8%;
+    float: left;
+    text-align: center;
+}
+
+#feature{
+    width: 100%;
+    height: 38%;
+    float: left;
+    text-align: center;
+}
+
+#button{
+    width: 100%;
+    height: 18%;
+}
+
+.buttonContainer {
+    width: 30%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    background-color: black;
+    color: white;
+    border-radius: 30px;
+    padding: 10px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+#predict_all{
+    width: 80%;
+    height: 1500px;
+    float: left;               
+}
+
+#first_predict{
+    width: 100%;
+    height: 750px;
+    float: left;
+    background-color: white;
+}
+
+
+#other_predict{
+    width: 100%;
+    height: 750px;
+    float: left;
+    background-color: white;
+}
+
+#predict_img{
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    float: left;
+}
+
+#first_data{
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    float:left;
+}
+
+.predicts{
+    width: 25%;
+    height: 100%;
+    text-align: center;
+    float:left;
+}
+
+#info_box{
+    width: 100%;
+    height: 100px;
+}
+
